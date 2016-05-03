@@ -9,21 +9,21 @@ Try to come up as many solutions as you can, there are at least 3 different ways
 package solution;
 
 public class RotateArray {
-//	public void rotate(int[] nums, int k) {
-//        k = (k %nums.length);
-//        //System.out.println(k);
-//        int [] a = new int [k];
-//        for(int i = 0; i<k; i++){
-//            //System.out.println(nums.length -i -1);
-//           // System.out.println(i);
-//            a[i] = nums[nums.length -i -1];
-//        }
-//        for(int i = nums.length -1; i>=k; i--){
-//            nums[i] = nums[i-k];
-//            
-//        }
-//        for(int i = 0; i<k; i++){
-//            nums[i] = a[k-i-1];
-//        }
-//    }
+	public void rotate(int[] nums, int k) {
+        k = (k %nums.length);
+        //System.out.println(k);
+        int [] a = new int [k];
+        for(int i = 0; i<k; i++){
+            //System.out.println(nums.length -i -1);
+           // System.out.println(i);
+            a[i] = nums[nums.length -i -1];
+        }
+        for(int i = nums.length -1; i>=k; i--){
+            nums[i] = nums[i-k];
+            
+        }
+        for(int i = 0; i<k; i++){
+            nums[i] = a[k-i-1];
+        }
+    }
 }
