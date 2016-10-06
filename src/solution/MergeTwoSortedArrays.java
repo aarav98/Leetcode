@@ -4,6 +4,7 @@
 package solution;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MergeTwoSortedArrays {
 	
@@ -12,6 +13,14 @@ public class MergeTwoSortedArrays {
 //		int[] B = {0,0,0};
 //		merge(A,3,B,3);
 //	}
+	public static void main(String[] args)
+	  {
+	    Scanner scan = new Scanner(System.in);
+	    int i = scan.nextInt(12);
+	    double d = scan.nextDouble();
+	    String s = scan.nextLine();
+	    System.out.println(s+d+i);
+	  }
 	public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m+n-1, j= m-1, k=n-1;
         for(i=m+n-1; i>=0&&k>=0&&j>=0; i--){
